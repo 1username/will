@@ -5,21 +5,27 @@ Will Outline Notes
 3. write the buttons and divs
 4. Write the script for the logic flow. This one try assigning variables and do it that way instead of twenty million different re-written buttons and divs for each re-occurrence of the same question to get the order of appearance of div responses right
 5. Get this to work on iphones and Macs too, different screen sizes and Android too, confirm on it
-
-On this one sort how to make visible all questions or invisible all questions on button click, 
-Have a copy option for that, and for the answers, where you can just click a spot of text and it copies like they have it on Amazon Turk for your worker number. Add in for to be able to scroll on columns, figure that out.
+wish list: outline you can make a pop up page showing it uncollapsed with the current spot highlighted, and a delete entries/restart button for each button. You can assign an Active value to a button when it is the last one with a submit button click, and do it that way. You can delete that variable when a different submit button is clicked. The function can update on submit button click, to assign the active variable to response/section associated with the most recently submitted. That status could be used to do a highlight option as well. 
+On this one sort how to make visible all questions or invisible all questions on button click, probably have that be the pop up window I'm talking about above
+Have a copy option for that outline, and for the answers, where you can just click a spot of text and it copies like they have it on Amazon Turk for your worker number, so click "copy responses" and the whole thing is copied. Add in for to be able to scroll on columns, figure that out.
 
 This link is goldmine https://digitalcommons.law.lsu.edu/cgi/viewcontent.cgi?article=3827&context=lalrev it has the noncupative stuff and most of the statute citations you wanted, and the statutory will stuff is in there too
 
 Joint wills are not allowed. (a single will signed by both husband and wife) Art. 2887
 Get the stuff David talked about in here, for the one couple we did wills for
-Add in that statutory will stuff too that you read doing the succession petition, where it was dated, and include that in here for sure as it is relevant for the time period.
+Add in that statutory will stuff too that you read doing the succession petition, where it was dated, in one of Walter's drafts, and include that in here for sure as it is relevant for the time period. 
 A will can’t be made by somebody besides the testator acting on their behalf.
 
 * Was there a will?
-* Is the will accessible
+- yes 
+- no (end of flow chart, give overview of intestate default succession for separate and community property)
+* Is the will accessible?
+- yes
+- no
 * Where was the will done?
-– It must meet the requirement of the law of the state (other than Louisiana) where the will was executed at the time that the will was executed;
+- in Lousiana
+- not in Louisiana
+It must meet the requirement of the law of the state (other than Louisiana) where the will was executed at the time that the will was executed;
 ** wills that are created in states other than Louisiana may be recognized as valid in Louisiana if the out-of-state will is: (1) in writing; (2) signed by the testator; and (3) in compliance with the laws of the state where it was created.
 – Must meet the requirements of the law where the testator was domiciled at death or when the will was executed; or
 – If it affects real estate, meet the requirements of the law of the state where the real estate is located.
@@ -29,8 +35,10 @@ A will can’t be made by somebody besides the testator acting on their behalf.
 * What kind of will is it?
 - olographic testament (called holographic testament in other states)
 - notarial testament
-- Nuncupative Testament by Public Act (find out if these are right)
-- Nuncupative Testament by Prior Act
+- Nuncupative Testament by Public Act (confirm a second time on these, and include cite of course) 
+https://digitalcommons.law.lsu.edu/cgi/viewcontent.cgi?article=4039&context=lalrev
+https://law.justia.com/codes/louisiana/2021/code-of-civil-procedure/article-2886/
+- Nuncupative Testament by Private? Act, not sure on this one, and there is "statutory" but I think that is something else. Look this up.
 - Mystic Testament
 https://law.justia.com/codes/louisiana/2011/ccp/ccp2885/
 A. Except as provided in Article 2886, the mystic testament must be proved by the testimony of at least three of the witnesses who were present at the act of superscription. These witnesses shall testify, in substance:
@@ -67,5 +75,55 @@ Was all signing done in the presence of a notary and two competent witnesses?
 Does the testator declare or signify to the notary and two witnesses that the instrument is their testament?
 is there a witness attestation clause?
 Is there a testator attestation clause?
+
+Going with #2 When the testator is literate and sighted but physically unable to sign - LA Civ Code Art. 1578 (2022)
+When a testator knows how to sign his name and to read, and is physically able to read but unable to sign his name because of a physical infirmity, the procedure for execution of a notarial testament is as follows:
+(1) In the presence of the notary and two competent witnesses, the testator shall declare or signify to them that the instrument is his testament, that he is able to see and read but unable to sign because of a physical infirmity, and shall affix his mark where his signature would otherwise be required; and if he is unable to affix his mark he may direct another person to assist him in affixing a mark, or to sign his name in his place. The other person may be one of the witnesses or the notary.
+(2) In the presence of the testator and each other, the notary and the witnesses shall sign the following declaration, or one substantially similar: "In our presence the testator has declared or signified that this is his testament, and that he is able to see and read and knows how to sign his name but is unable to do so because of a physical infirmity; and in our presence he has affixed, or caused to be affixed, his mark or name at the end of the testament and on each other separate page, and in the presence of the testator and each other, we have subscribed our names this _____day of ____, _____."
+
+Going with #3 When the testator is unable to read LA Civ Code Art. 1579 (2022)
+When a testator does not know how to read, or is physically impaired to the extent that he cannot read, whether or not he is able to sign his name, the procedure for execution of a notarial testament is as follows:
+
+(1) The written testament must be read aloud in the presence of the testator, the notary, and two competent witnesses. The witnesses, and the notary if he is not the person who reads the testament aloud, must follow the reading on copies of the testament. After the reading, the testator must declare or signify to them that he heard the reading, and that the instrument is his testament. If he knows how, and is able to do so, the testator must sign his name at the end of the testament and on each other separate page of the instrument.
+
+(2) In the presence of the testator and each other, the notary and witnesses must sign the following declaration, or one substantially similar: "This testament has been read aloud in our presence and in the presence of the testator, such reading having been followed on copies of the testament by the witnesses [, and the notary if he is not the person who reads it aloud,] and in our presence the testator declared or signified that he heard the reading, and that the instrument is his testament, and that he signed his name at the end of the testament and on each other separate page; and in the presence of the testator and each other, we have subscribed our names this ____day of ____, ______."
+
+(3) If the testator does not know how to sign his name or is unable to sign because of a physical infirmity, he must so declare or signify and then affix his mark, or cause it to be affixed, where his signature would otherwise be required; and if he is unable to affix his mark he may direct another person to assist him in affixing a mark or to sign his name in his place. The other person may be one of the witnesses or the notary. In this instance, the required declaration must be modified to recite in addition that the testator declared or signified that he did not know how to sign his name or was unable to do so because of a physical infirmity; and that he affixed, or caused to be affixed, his mark or name at the end of the testament and on each other separate page.
+
+(4) A person who may execute a testament authorized by either Article 1577 or 1578 may also execute a testament authorized by this Article.
+
+
+Going with #4 When the testator is blind but knows how and is physically able to read braille (notarial testament in braille form)
+ LA Civ Code Art. 1580 (2022)
+A testator who knows how to and is physically able to read braille, may execute a notarial testament according to the following procedure:
+
+(1) In the presence of a notary and two competent witnesses, the testator must declare or signify that the testament, written in braille, is his testament, and must sign his name at the end of the testament and on each other separate page of the instrument.
+
+(2) In the presence of the testator and each other, the notary and witnesses must sign the following declaration, or one substantially similar: "In our presence the testator has signed this testament at the end and on each other separate page and has declared or signified that it is his testament; and in the presence of the testator and each other we have hereunto subscribed our names this ____day of _____, _____."
+
+(3) If the testator is unable to sign his name because of a physical infirmity, he must so declare or signify and then affix, or cause to be affixed, his mark where his signature would otherwise be required; and if he is unable to affix his mark he may direct another person to assist him in affixing a mark, or to sign his name in his place. The other person may be one of the witnesses or the notary. In this instance, the required declaration must be modified to recite in addition that the testator declared or signified that he was unable to sign his name because of a physical infirmity; and that he affixed, or caused to be affixed, his mark or name at the end of the testament and on each other separate page.
+
+(4) The declaration in the notarial testament in braille form must be in writing, not in braille.
+ 
+Going with #5 When the testator has been legally declared physically deaf or deaf and blind and who is able to read sign language, braille, or visual English - LA Civ Code Art. 1580.1 (2022)
+A. A notarial testament may be executed under this Article only by a person who has been legally declared physically deaf or deaf and blind and who is able to read sign language, braille, or visual English.
+
+B. The notarial testament shall be prepared and shall be dated and executed in the following manner:
+
+(1) In the presence of a notary and two competent witnesses, the testator shall declare or signify to them that the instrument is his testament and shall sign his name at the end of the testament and on each other separate page of the instrument.
+
+(2) In the presence of the testator and each other, the notary and the witnesses shall then sign the following declaration, or one substantially similar: "The testator has signed this testament at the end and on each other separate page, and has declared or signified in our presence that this instrument is his testament, and in the presence of the testator and each other we have hereunto subscribed our names this __________ day of ____________, 2____ ."
+
+C. If the testator is unable to sign his name because of a physical infirmity, the testament shall be dated and executed in the following manner:
+
+(1) In the presence of a notary and two competent witnesses, the testator shall declare or signify by sign or visual English to them that the instrument is his last testament, that he is unable to sign because of a physical infirmity, and shall then affix his mark at the end of the testament and on each other separate page of the instrument.
+
+(2) In the presence of the testator and each other, the notary and the witnesses shall then sign the following declaration, or one substantially similar: "The testator has declared or signified by sign or visual English that he knows how to sign his name but is unable to sign his name because of a physical infirmity and he has affixed his mark at the end and on each other separate page of this testament, and declared or signified in our presence that this instrument is his testament and in the presence of the testator and each other we have hereunto subscribed our names this ___________ day of ___________________, 2_____."
+
+D. The attestation clause required by Subparagraphs (B)(2) and (C)(2) shall be prepared in writing.
+
+E.(1) A competent witness for the purposes of this Article is a person who meets the qualifications of Articles 1581 and 1582, and who knows how to sign his name and to read the required attestation clause, and is physically able to do both. At least one of the witnesses to the testament shall also meet the qualifications of a certified interpreter for the deaf as provided for in R.S. 46:2361 et seq.
+
+(2) The testator shall be given the choice of accommodation services afforded by the use of large print, braille, or a tactile interpreter.
 
 You need to have in here about invalid clauses, like when they say after they die to sell the house and divide up the profit to everybody, or to do specific stuff.
