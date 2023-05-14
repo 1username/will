@@ -126,6 +126,18 @@ Is the entire will handwritten?<br>
 	<br>
 <button name="handwrittenX" id="handwrittenX">submit</button><br><br>
   </div> 
+	  
+  <div id="handwritten_type">
+If the will is not entirely handwritten, which of the below does it most resemble?<br>
+	<input type="radio" id="handwritten_type_info" name="handwritten_typeX" value="handwritten_type_unknown">
+	<label for="handwritten_type_info">unknown</label><br>
+	<input type="radio" id="partial_handwritten" name="handwritten_typeX" value="partial_handwritten_value">
+	<label for="partial_handwritten">The will is handwritten in part and typed in part </label><br>
+	<input type="radio" id="typed_will" name="handwritten_typeX" value="typed_will_value">
+	<label for="typed_will">The will is entirely typed</label><br>
+	<br>
+<button name="handwritten_typeX" id="handwritten_typeX">submit</button><br><br>
+  </div> 
 
   <div id="will_date">
 Does the will have a date?<br>
@@ -140,7 +152,7 @@ Does the will have a date?<br>
   </div>   
 
   <div id="will_sig">
-Is the last page of the will signed? Olographic, or handwritten wills only have to have one signature by the testator/testatrix at the end of the will.<br>
+Is the last page of the will signed by the testator/testatrix? Olographic, or handwritten wills only have to have one signature by the testator/testatrix at the end of the will. (put the above sentence in the response section, gonna make this signature Q be for all will types)<br>
 	<input type="radio" id="willsiginfo" name="willsigX" value="willsig_unknown">
 	<label for="willsiginfo">unknown</label><br>
 	<input type="radio" id="yes_willsig" name="willsigX" value="yes_willsig_value">
@@ -149,6 +161,18 @@ Is the last page of the will signed? Olographic, or handwritten wills only have 
 	<label for="no_willsig">no</label><br>
 	<br>
 <button name="willsigX" id="willsigX">submit</button><br><br>
+  </div> 
+
+  <div id="sig_all_pages_olographic">
+Does every page of the will have the testator's/testatrix's signature?<br>
+	<input type="radio" id="sigallpagesinfo" name="sig_all_pagesX" value="sig_all_pages_unknown">
+	<label for="sigallpagesinfo">unknown</label><br>
+	<input type="radio" id="yes_sig_all_pages" name="sig_all_pagesX" value="yes_sig_all_pagesvalue">
+	<label for="yes_sig_all_pages">yes </label><br>
+	<input type="radio" id="no_sig_all_pages" name="sig_all_pagesX" value="no_sig_all_pagesvalue">
+	<label for="no_sig_all_pages">no</label><br>
+	<br>
+<button name="sig_all_pagesX" id="sig_all_pagesX">submit</button><br><br>
   </div> 
   
   <div id="will_intent">
@@ -162,6 +186,23 @@ Does the will show the testator’s intent for it to serve as a Last Will and Te
 	<br>
 <button name="willintentX" id="willintentX">submit</button><br><br>
   </div> 
+************************************************you are here
+Now add in all the notarial will questions below
+*******************************************************************
+  <div id="will_sig">
+Which of the following categories does the Testator/Testatrix fall into?<br>
+	<input type="radio" id="willsiginfo" name="willsigX" value="willsig_unknown">
+	<label for="willsiginfo">unknown</label><br>
+	<input type="radio" id="yes_willsig" name="willsigX" value="yes_willsig_value">
+	<label for="yes_willsig">yes </label><br>
+	<input type="radio" id="no_willsig" name="willsigX" value="no_willsig_value">
+	<label for="no_willsig">no</label><br>
+	<br>
+<button name="willsigX" id="willsigX">submit</button><br><br>
+  </div> 
+	  
+	  
+	  
   </p>
   </div>
   <div class="column" style="background-color:#bbb;">
