@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Louisiana Will Validity
+</title>
+    <style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+</script>
+<h1> will analysis program</h1>
+<p id="header">
+<a href="blah">blah</a> | <a href="blah">blah</a> | <a href="https://legis.la.gov/legis/Law.aspx?d=108900">LA CC Art. 1575 Olographic Testament</a> | <a href="https://legis.la.gov/legis/Law.aspx?d=108901">LA CC Art. 1576 Notarial Testament</a><br>
+</p>
+  <div class="row">
+  <div class="column" style="background-color:#aaa;"> 
+  <p>
+  <div id="will">
+Was there a will?<br>
+	<input type="radio" id="willinfo" name="will_selection" value="will_unknown">
+	<label for="willinfo">unknown</label><br>
+	<input type="radio" id="yes_will" name="will_selection" value="yes_will_value">
+	<label for="yes_will">yes</label><br>
+	<input type="radio" id="no_will" name="will_selection" value="no_will_value">
+	<label for="no_will">no</label><br>
+	<br>
+<button name="will_selection" id="will_selection">submit</button><br><br>
+  </div>
+  
+  <div id="will_solo">
+Was the will written by a third party on behalf of the Testator, or is it a will for more than one person? <a href="https://legis.la.gov/legis/Law.aspx?d=108896">LA Civil Code Article 1571</a> explains that "A testament may not be executed by a mandatary for the testator.  Nor may more than one person execute a testament in the same instrument." In practice this means that husbands and wives can't do a joint will, and POAs or curators for an interdict can't execute a last will and testament on their principal or agent's behalf.<br>
+	<input type="radio" id="willsoloinfo" name="will_solox" value="will_solo_unknown">
+	<label for="willsoloinfo">unknown</label><br>
+	<input type="radio" id="yes_will_solo" name="will_solox" value="yes_will_solo_value">
+	<label for="yes_will_solo">yes</label><br>
+	<input type="radio" id="no_will_solo" name="will_soloX" value="no_will_solo_value">
+	<label for="no_will_solo">no</label><br>
+	<br>
+<button name="will_soloX" id="will_soloX">submit</button><br><br>
+  </div>
+  
+  <div id="will_origin">
+  
+Where was the will done?<br>
+	<input type="radio" id="locationnfo" name="will_location" value="location_unknown">
+	<label for="locationinfo">unknown</label><br>
+	<input type="radio" id="in_LA" name="will_location" value="in_LA_value">
+	<label for="in_LA">Louisiana</label><br>
+	<input type="radio" id="another_state" name="will_location" value="another_state_value">
+	<label for="another_state">Another state in the U.S.</label><br>
+	<input type="radio" id="another_country" name="will_location" value="another_country_value">
+	<label for="another_country">A different country</label><br>
+	<br>
+<button name="will_location" id="will_location">submit</button><br><br>
+  </div>
+  <div id="will_date">
+When was the will done?<br>
+	<input type="radio" id="dateinfo" name="will_dateX" value="date_unknown">
+	<label for="dateinfo">unknown</label><br>
+	<input type="radio" id="before1999" name="will_dateX" value="before1999_value">
+	<label for="before1999">before 7-1-1999</label><br>
+	<input type="radio" id="after1999" name="will_dateX" value="after1999_value">
+	<label for="after1999">On or after 7-1-1999</label><br>
+	<br>
+<button name="will_dateX" id="will_dateX">submit</button><br><br>
+  </div>  
+  <div id="will_type">
+What type of will is it?<br>
+	<input type="radio" id="typeinfo" name="will_typeX" value="type_unknown">
+	<label for="typeinfo">unknown</label><br>
+	<input type="radio" id="olographic" name="will_typeX" value="olographic_value">
+	<label for="olographic">olographic testament </label><br>
+	<input type="radio" id="notarial" name="will_typeX" value="notarial_value">
+	<label for="notarial">notarial testament</label><br>
+	<input type="radio" id="mystic" name="will_typeX" value="mystic_value">
+	<label for="mystic">mystic will </label><br>
+	<input type="radio" id="nun_public" name="will_typeX" value="nun_public_value">
+	<label for="nun_public">Nuncupative Testament by Public Act </label><br>
+	<input type="radio" id="nun_private" name="will_typeX" value="nun_private_value">
+	<label for="nun_private">Nuncupative Testament by Private Act </label><br>
+	<br>
+<button name="will_typeX" id="will_typeX">submit</button><br><br>
+  </div>    
+  
+  <div id="out_of_state">
+Does the will meet all out of state requirements?<br>
+It must be (1) in writing; (2) signed by the testator; (3) in compliance with the laws of the state where the will was created, or where the testator was domiciled at death or when the will was executed; (4) or if it affects real estate, meet the requirements of the law of the state where the real estate is located.<br>
+	<input type="radio" id="OutStateinfo" name="out_of_stateX" value="out_of_state_unknown">
+	<label for="outstateinfo">unknown</label><br>
+	<input type="radio" id="yes_out_req" name="out_of_stateX" value="yes_out_req_value">
+	<label for="yes_out_req">yes </label><br>
+	<input type="radio" id="no_out_req" name="out_of_stateX" value="no_out_req_value">
+	<label for="no_out_req">no</label><br>
+	<br>
+<button name="out_of_stateX" id="out_of_stateX">submit</button><br><br>
+  </div> 
+  
+  <div id="handwritten">
+Is the entire will handwritten?<br>
+	<input type="radio" id="handwritteninfo" name="handwrittenX" value="handwritten_unknown">
+	<label for="handwritteninfo">unknown</label><br>
+	<input type="radio" id="yes_handwritten" name="handwrittenX" value="yes_handwritten_value">
+	<label for="yes_handwritten">yes </label><br>
+	<input type="radio" id="not_handwritten" name="handwrittenX" value="not_handwritten_value">
+	<label for="not_handwritten">no</label><br>
+	<br>
+<button name="handwrittenX" id="handwrittenX">submit</button><br><br>
+  </div> 
+	  
+  <div id="handwritten_type">
+If the will is not entirely handwritten, which of the below does it most resemble?<br>
+	<input type="radio" id="handwritten_type_info" name="handwritten_typeX" value="handwritten_type_unknown">
+	<label for="handwritten_type_info">unknown</label><br>
+	<input type="radio" id="partial_handwritten" name="handwritten_typeX" value="partial_handwritten_value">
+	<label for="partial_handwritten">The will is handwritten in part and typed in part </label><br>
+	<input type="radio" id="typed_will" name="handwritten_typeX" value="typed_will_value">
+	<label for="typed_will">The will is entirely typed</label><br>
+	<br>
+<button name="handwritten_typeX" id="handwritten_typeX">submit</button><br><br>
+  </div> 
+
+  <div id="will_date">
+Does the will have a date?<br>
+	<input type="radio" id="willdateinfo" name="willdateX" value="willdate_unknown">
+	<label for="willdateinfo">unknown</label><br>
+	<input type="radio" id="yes_willdate" name="willdateX" value="yes_willdate_value">
+	<label for="yes_willdate">yes </label><br>
+	<input type="radio" id="no_willdate" name="willdateX" value="no_willdate_value">
+	<label for="no_willdate">no</label><br>
+	<br>
+<button name="willdateX" id="willdateX">submit</button><br><br>
+  </div>   
+
+  <div id="will_sig">
+Is the last page of the will signed by the testator/testatrix? Olographic, or handwritten wills only have to have one signature by the testator/testatrix at the end of the will. (put the above sentence in the response section, gonna make this signature Q be for all will types)<br>
+	<input type="radio" id="willsiginfo" name="willsigX" value="willsig_unknown">
+	<label for="willsiginfo">unknown</label><br>
+	<input type="radio" id="yes_willsig" name="willsigX" value="yes_willsig_value">
+	<label for="yes_willsig">yes </label><br>
+	<input type="radio" id="no_willsig" name="willsigX" value="no_willsig_value">
+	<label for="no_willsig">no</label><br>
+	<br>
+<button name="willsigX" id="willsigX">submit</button><br><br>
+  </div> 
+
+  <div id="sig_all_pages_olographic">
+Does every page of the will have the testator's/testatrix's signature?<br>
+	<input type="radio" id="sigallpagesinfo" name="sig_all_pagesX" value="sig_all_pages_unknown">
+	<label for="sigallpagesinfo">unknown</label><br>
+	<input type="radio" id="yes_sig_all_pages" name="sig_all_pagesX" value="yes_sig_all_pagesvalue">
+	<label for="yes_sig_all_pages">yes </label><br>
+	<input type="radio" id="no_sig_all_pages" name="sig_all_pagesX" value="no_sig_all_pagesvalue">
+	<label for="no_sig_all_pages">no</label><br>
+	<br>
+<button name="sig_all_pagesX" id="sig_all_pagesX">submit</button><br><br>
+  </div> 
+  
+  <div id="will_intent">
+Does the will show the testator’s intent for it to serve as a Last Will and Testament? Put in example/explanation<br>
+	<input type="radio" id="willintentinfo" name="willintentX" value="willintent_unknown">
+	<label for="willintentinfo">unknown</label><br>
+	<input type="radio" id="yes_willintent" name="willintentX" value="yes_willintent_value">
+	<label for="yes_willintent">yes </label><br>
+	<input type="radio" id="no_willintent" name="willintentX" value="no_willintent_value">
+	<label for="no_willintent">no</label><br>
+	<br>
+<button name="willintentX" id="willintentX">submit</button><br><br>
+  </div> 
+  
+  <div id="testatr_type">
+Which of the following categories does the testator/testatrix fall into?<br>
+	<input type="radio" id="testatr_typeinfo" name="testatr_typeX" value="testatr_type_unknown">
+	<label for="testatr_typeinfo">unknown</label><br>
+	<input type="radio" id="normal_type" name="testatr_typeX" value="normal_type_value">
+	<label for="normal_type">The testator/testatrix knows how to sign their name and to read and is physically able to do both </label><br>
+	<input type="radio" id="physically_unable_type" name="testatr_typeX" value="physically_unable_typevalue">
+	<label for="physically_unable_type">The testator/testatrix is literate and sighted but physically unable to sign</label><br>
+	<input type="radio" id="illiterate" name="testatr_typeX" value="illiterate_value">
+	<label for="illiterate">The testator/testatrix is unable to read</label><br>
+	<input type="radio" id="blind_and_literate" name="testatr_typeX" value="blind_and_literate_value">
+	<label for="blind_and_literate">The testator/testatrix is blind but knows how and is physically able to read braille (notarial testament in braille form)</label><br>
+	<input type="radio" id="deaf_and_literate" name="testatr_typeX" value="deaf_and_literate_value">
+	<label for="deaf_and_literate">The testator/testatrix has been legally declared physically deaf or deaf and blind and is able to read sign language, braille, or visual English</label><br>
+	<br>
+<button name="testatr_typeX" id="testatr_typeX">submit</button><br><br>
+  </div> 
+  
+  <div id="notary_will_intent">
+	  Per <a href="https://legis.la.gov/legis/Law.aspx?p=y&d=108902">Louisiana Civil Code Article 1577(1)</a> does the testator/testatrix declare or signify to the notary and two witnesses that the instrument is their testament? (Example of wording link here)<br>
+	<input type="radio" id="notarywillintentinfo" name="notarywillintentX" value="notarywillintent_unknown">
+	<label for="notarywillintentinfo">unknown</label><br>
+	<input type="radio" id="yes_notarywillintent" name="notarywillintentX" value="yes_notarywillintent_value">
+	<label for="yes_notarywillintent">yes </label><br>
+	<input type="radio" id="no_notarywillintent" name="notarywillintentX" value="no_notarywillintent_value">
+	<label for="no_notarywillintent">no</label><br>
+	<br>
+<button name="notarywillintentX" id="notarywillintentX">submit</button><br><br>
+  </div> 
+ 
+ <div id="attestation_clause">
+	  Is there an attestation clause or something substatially similar, as described in <a href="https://legis.la.gov/legis/Law.aspx?p=y&d=108902">Louisiana Civil Code Article 1577(2)</a>?<br>"In our presence the testator has declared or signified that this instrument is his testament and has signed it at the end and on each other separate page, and in the presence of the testator and each other we have hereunto subscribed our names this ____day of _________, ____."<br>
+	<input type="radio" id="attestationclauseinfo" name="attestation_clauseX" value="attestation_clause_unknown">
+	<label for="attestationclauseinfo">unknown</label><br>
+	<input type="radio" id="yes_attestation_clause" name="attestation_clauseX" value="yes_attestation_clause_value">
+	<label for="yes_attestation_clause">yes </label><br>
+	<input type="radio" id="no_attestation_clause" name="attestation_clauseX" value="no_attestation_clause_value">
+	<label for="no_attestation_clause">no</label><br>
+	<br>
+<button name="attestation_clauseX" id="attestation_clauseX">submit</button><br><br>
+  </div> 
+
+  <div id="witness_validity">
+	  Per <a href="https://legis.la.gov/legis/Law.aspx?p=y&d=108907">Louisiana Civil Code § 3 Art. 1581</a>, are the witnesses competent? A witness cannot be "insane, blind, under the age of sixteen, or unable to sign his name.  A person who is competent but deaf or  unable to read cannot be a witness to a notarial testament under Article 1579."<br>
+	<input type="radio" id="notarywillintentinfo" name="witness_validityX" value="notarywillintent_unknown">
+	<label for="notarywillintentinfo">unknown</label><br>
+	<input type="radio" id="yes_notarywillintent" name="witness_validityX" value="yes_notarywillintent_value">
+	<label for="yes_notarywillintent">yes </label><br>
+	<input type="radio" id="no_notarywillintent" name="witness_validityX" value="no_notarywillintent_value">
+	<label for="no_notarywillintent">no</label><br>
+	<br>
+<button name="witness_validityX" id="witness_validityX">submit</button><br><br>
+  </div> 
+  	  	  
+  </p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+  <p>blah</p>
+  </div>
+  </div>
+</body>
+</html>
