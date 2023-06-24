@@ -1,2 +1,2 @@
 # will
-Incomplete will analysis program for Louisiana. This is my current project. 
+Incomplete will analysis program for Louisiana. This is a current project. 
