@@ -1,0 +1,1789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<title>Louisiana Will Validity
+</title>
+    <style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*this is TEST to start adaption
+ul{padding:0}
+li{display:flex;background-color:#eee;margin:5px;padding:5px;align-items:center}
+.delete{margin-left:auto;background-color:#aaa;padding:5px;cursor:pointer}
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<h1> State of Louisiana will analysis program</h1>
+<p id="header">
+<a href="https://digitalcommons.law.lsu.edu/cgi/viewcontent.cgi?article=4039&context=lalrev">Nuncupative Testament by Public Act</a> | <a href="https://www.legis.la.gov/legis/Law.aspx?p=y&d=111561">LA CCP 2884 Nuncupative Testament by Private Act</a> | <a href="https://www.legis.la.gov/legis/Law.aspx?d=111562">LA CC Art. 2885 Mystic Testament</a> | <a href="https://legis.la.gov/legis/Law.aspx?d=108900">LA CC Art. 1575 Olographic Testament</a> | <a href="https://legis.la.gov/legis/Law.aspx?d=108901">LA CC Art. 1576 Notarial Testament</a><br>
+</p>
+  <div class="row">
+  <div class="column" style="background-color:#aaa;"> 
+  <p>
+  <div id="will">
+Was there a will?<br>
+	<input type="radio" id="willinfo" name="will_selection" value="It is unknown if there was a will.">
+	<label for="willinfo">unknown</label><br>
+	<input type="radio" id="yes_will" name="will_selection" value="There was a will.">
+	<label for="yes_will">yes</label><br>
+	<input type="radio" id="no_will" name="will_selection" value="There was no will">
+	<label for="no_will">no</label><br>
+	<br>
+<button type="button" onclick="addItem()" name="will_selection" id="add-item">submit</button><br><br>
+  </div>
+
+  <div id="will_origin" class="Cwill_origin" style="display:none;">
+  
+Where was the will done?<br>
+	<input type="radio" id="locationnfo" name="will_location" value="Where the will was done is unknown.">
+	<label for="locationinfo">unknown</label><br>
+	<input type="radio" id="in_LA" name="will_location" value="The will was done in Louisiana.">
+	<label for="in_LA">Louisiana</label><br>
+	<input type="radio" id="another_state" name="will_location" value="The will was done in another state.">
+	<label for="another_state">Another state in the U.S.</label><br>
+	<input type="radio" id="another_country" name="will_location" value="The will was done in another country">
+	<label for="another_country">A different country</label><br>
+	<br>
+<button type="button" onclick="addItem2()" name="will_location" id="will_location">submit</button>
+<br><br>
+  </div>
+  
+  <div id="will_solo" class="Cwill_solo" style="display:none;">
+Was the will executed by a mandatory (POA) on behalf of the Testator, or is it a will for more than one person? <a href="https://legis.la.gov/legis/Law.aspx?d=108896">LA Civil Code Article 1571</a> explains that "A testament may not be executed by a mandatary for the testator.  Nor may more than one person execute a testament in the same instrument." In practice this means that husbands and wives can't do a joint will, and POAs or curators for an interdict can't execute a last will and testament on their principal or agent's behalf.<br>
+	<input type="radio" id="willsoloinfo" name="will_soloX" value="It is unknown if the will was executed by a third party, or if it is a will for more than one person.">
+	<label for="willsoloinfo">unknown</label><br>
+	<input type="radio" id="yes_will_solo" name="will_soloX" value="The will was executed by a third party or it is a will for more than one person.">
+	<label for="yes_will_solo">yes</label><br>
+	<input type="radio" id="no_will_solo" name="will_soloX" value="The will was not executed by a third party nor is it a will for more than one person.">
+	<label for="no_will_solo">no</label><br>
+	<br>
+<button type="button" onclick="addItem3()" name="will_soloX" id="will_soloX">submit</button>
+<br><br>
+  </div>
+
+  <div id="out_of_state" class="Cout_of_state" style="display:none;">
+Does the will meet all out of state requirements? <a href="La. C.P. § 2888">CCP 2888</a><br>
+It must be (1) in writing; (2) signed by the testator; (3) in compliance with the laws of the state where the will was created, or where the testator was domiciled at death or when the will was executed; (4) or if it affects real estate, meet the requirements of the law of the state where the real estate is located.<br>
+	<input type="radio" id="OutStateinfo" name="out_of_stateX" value="It is unknown if the will meets out of state testament requirements.">
+	<label for="outstateinfo">unknown</label><br>
+	<input type="radio" id="yes_out_req" name="out_of_stateX" value="The will meets out of state testament requirements.">
+	<label for="yes_out_req">yes </label><br>
+	<input type="radio" id="no_out_req" name="out_of_stateX" value="The will doesn't meet out of state testament requirements.">
+	<label for="no_out_req">no</label><br>
+	<br>
+<button type="button" onclick="addItem4()" name="out_of_stateX" id="out_of_stateX">submit</button>
+<br><br>
+  </div>
+ 
+  <div id="will_type" class="Cwill_type" style="display:none;">
+What type of will is it? An <a href="https://www.legis.la.gov/legis/Law.aspx?d=108900">olographic will</a> is a handwritten will. A <a href="https://www.legis.la.gov/legis/Law.aspx?d=108902">notarial will</a> is one typed and executed/signed by a notary and two witnesses. A <a href="https://digitalcommons.law.lsu.edu/cgi/viewcontent.cgi?article=3827&context=lalrev">statutory will</a> is a will category in place from 1952 to x that, similar to a notarial will, required the signature of a notary and two witnesses.<br>
+	<input type="radio" id="typeinfo" name="will_typeX" value="The type of will is unknown.">
+	<label for="typeinfo">unknown</label><br>
+	<input type="radio" id="olographic" name="will_typeX" value="It is an olographic will.">
+	<label for="olographic">olographic testament </label><br>
+	<input type="radio" id="notarial" name="will_typeX" value="It is a notarial will.">
+	<label for="notarial">notarial testament</label><br>
+	<input type="radio" id="mystic" name="will_typeX" value="It is a mystic will.">
+	<label for="mystic">mystic will </label><br>
+	<input type="radio" id="nun_public" name="will_typeX" value="It is a Nuncupative Testament by Public Act.">
+	<label for="nun_public">Nuncupative Testament by Public Act </label><br>
+	<input type="radio" id="nun_private" name="will_typeX" value="It is a Nuncupative Testament by Private Act.">
+	<label for="nun_private">Nuncupative Testament by Private Act </label><br>
+        <input type="radio" id="statutory" name="will_typeX" value="It is a Statutory Will.")
+        <label for"statutory">statutory will</label><br>
+	<br>
+<button type="button" onclick="addItem6()" name="will_typeX" id="will_typeX">submit</button>
+<br><br>
+  </div>     
+
+  <div id="will_date" class="Cwill_date" style="display:none;">
+Does the will have a date?<br>
+	<input type="radio" id="willdateinfo" name="willdateX" value="It is unknown if there's a date on the will.">
+	<label for="willdateinfo">unknown</label><br>
+	<input type="radio" id="yes_willdate" name="willdateX" value="The will has a date.">
+	<label for="yes_willdate">yes </label><br>
+	<input type="radio" id="no_willdate" name="willdateX" value="There's no date on the will.">
+	<label for="no_willdate">no</label><br>
+	<br>
+<button type="button" onclick="addItem8()" name="willdateX" id="willdateX">submit</button>
+<br><br>
+  </div>   
+
+  <div id="will_date_spec" class="Cwill_date_spec" style="display:none;">
+When was the will done? On July 1, 1999 Act 1997 went into effect which made only olographic and notarial will forms valid in Louisiana. Mystic and Nuncupative wills created on or after this date are not in valid form <a href="https://www.legis.la.gov/legis/Law.aspx?d=108899">Art. 1574</a><br>
+	<input type="radio" id="dateinfo" name="will_date_specX" value="The date the will was done is unknown.">
+	<label for="dateinfo">unknown</label><br>
+	<input type="radio" id="before1999" name="will_date_specX" value="The will was done before 7/1/1999.">
+	<label for="before1999">before 7/1/1999</label><br>
+	<input type="radio" id="after1999" name="will_date_specX" value="The will was done on or after 7/1/1999.">
+	<label for="after1999">On or after 7/1/1999</label><br>
+	<br>
+<button type="button" onclick="addItem5()" name="will_date_specX" id="will_date_specX">submit</button>
+<br><br>
+  </div> 
+
+  <div id="handwritten" class="Chandwritten" style="display:none;">
+Which of the following best describes the will?<br>
+	<input type="radio" id="handwritteninfo" name="handwrittenX" value="It is unknown if the entire will is handwritten.">
+	<label for="handwritteninfo">unknown</label><br>
+	<input type="radio" id="yes_handwritten" name="handwrittenX" value="The entire will is handwritten.">
+	<label for="yes_handwritten">The entire will is handwritten in the same handwriting. </label><br>
+	<input type="radio" id="not_handwritten" name="handwrittenX" value="The entire will is not handwritten.">
+	<label for="not_handwritten">The entire will is typed.</label><br>
+	<input type="radio" id="partial_handwritten" name="handwrittenX" value="The will is partly handwritten and partly typed.">
+	<label for="partial_handwritten">Part of the will is typed and part of the will is handwritten.</label><br>
+	<input type="radio" id="other_handwritten" name="handwrittenX" value="Something else describes the format of this will.">
+	<label for="other_handwritten">None of the above describe how the will is.</label><br><br>
+<button type="button" onclick="addItem7()" name="handwrittenX" id="handwrittenX">submit</button>
+<br><br>
+  </div> 
+
+  <div id="will_sig" class="Cwill_sig" style="display:none;">
+Is the last page of the will signed signed by the Testator/trix? Olographic, or handwritten wills only have to have one signature by the testator/testatrix at the end of the will. Notarial wills require the Testator's signature on the last page as well, among other requirements that will be explored further on in the flow chart.<br>
+	<input type="radio" id="willsiginfo" name="willsigX" value="It is unknown if the last page of the will is signed.">
+	<label for="willsiginfo">unknown</label><br>
+	<input type="radio" id="yes_willsig" name="willsigX" value="The last page of the will is signed.">
+	<label for="yes_willsig">yes </label><br>
+	<input type="radio" id="no_willsig" name="willsigX" value="The last page of the will isn't signed.">
+	<label for="no_willsig">no</label><br>
+	<br>
+<button type="button" onclick="addItem9()" name="willsigX" id="willsigX">submit</button>
+<br><br>
+  </div> 
+  
+  <div id="will_intent" class="Cwill_intent" style="display:none;">
+Does the will show the testator’s intent for it to serve as a Last Will and Testament? Put in example/explanation<br>
+	<input type="radio" id="willintentinfo" name="willintentX" value="It is unknown if the will shows the testator's intent for it to serve as a Last Will and Testament">
+	<label for="willintentinfo">unknown</label><br>
+	<input type="radio" id="yes_willintent" name="willintentX" value="The will shows intent.">
+	<label for="yes_willintent">yes </label><br>
+	<input type="radio" id="no_willintent" name="willintentX" value="The will doesn't show intent.">
+	<label for="no_willintent">no</label><br>
+	<br>
+<button type="button" onclick="addItem10()" name="willintentX" id="willintentX">submit</button>
+<br><br>
+  </div> 
+
+<div id="capacity" class="Ccapacity" style="display:none;">
+Which of the following capacity categories does the Testator fall under?<br>
+	<input type="radio" id="capacityinfo" name="capacityX" value="The testator's capacity level is unknown.">
+	<label for="capacityinfo">unknown</label><br>
+	<input type="radio" id="fullCap" name="capacityX" value="The testator is literate, can write their own name, does not use Braille, and is not deaf or deaf and blind.">
+	<label for="fullCap">The testator is literate, can write their own name, does not use Braille, and is not deaf or deaf and blind.</label><br>
+	<input type="radio" id="Capilliterate" name="capacityX" value="The testator is illiterate.">
+	<label for="Capilliterate">The testator is illiterate.</label><br>
+	<input type="radio" id="Punable" name="capacityX" value="The testator can read and knows how to sign their name, but is physically unable to do so.">
+	<label for="Punable">The testator can read and knows how to sign their name, but is physically unable to do so.</label><br>
+	<input type="radio" id="Braille" name="capacityX" value="The testator can read Braille.">
+	<label for="Braille">The testator can read braille.</label><br>
+	<input type="radio" id="DeaforDB" name="capacityX" value="The testator is deaf or deaf and blind.">
+	<label for="DeaforDB">The testator is deaf or deaf and blind</label><br>
+	<br>
+<button type="button" onclick="addItem11()" name="capacityX" id="capacityX">submit</button>
+<br><br>
+</div>
+
+<div id="TestatorClause" class="CTestatorClause" style="display:none;">
+Is the following declaration, known as a Testator Clause, or one substantially similar, signed by the notary and two witnesses: "In our presence the testator has declared or signified that this instrument is his testament and has signed it at the end and on each other separate page, and in the presence of the testator and each other we have hereunto subscribed our names this ____day of _________, ____." LA Civ Code art. 1577 (2022) <a href="https://legis.la.gov/legis/Law.aspx?p=y&d=108902">LA Civ Code art. 1577</a><br>
+	<input type="radio" id="testatorclauseinfo" name="TestatorClauseX" value="It is unknown if the will shows the testator's intent for it to serve as a Last Will and Testament">
+	<label for="testatorclauseinfo">unknown</label><br>
+	<input type="radio" id="yes_testatorclause" name="TestatorClauseX" value="The will shows intent.">
+	<label for="yes_testatorclause">yes </label><br>
+	<input type="radio" id="no_testatorclause" name="TestatorClauseX" value="The will doesn't show intent.">
+	<label for="no_testatorclause">no</label><br>
+	<br>
+<button type="button" onclick="addItem20()" name="TestatorClauseX" id="TestatorClauseX">submit</button>
+<br><br>
+  </div> 
+
+<div id="UnableToSignClause" class="CUnableToSignClause" style="display:none;">
+Is the following declaration, or one substantially similar, signed by the notary and two witnesses: "In our presence the testator has declared or signified that this is his testament, and that he is able to see and read and knows how to sign his name but is unable to do so because of a physical infirmity; and in our presence he has affixed, or caused to be affixed, his mark or name at the end of the testament and on each other separate page, and in the presence of the testator and each other, we have subscribed our names this _____day of ____, ______." LA Civ Code art. 1578 (2021) <a href="https://www.legis.la.gov/legis/Law.aspx?d=108903">LA Civ Code art. 1578</a><br>
+	<input type="radio" id="Unableinfo" name="UnableX" value="It is unknown if the Unable to Sign declaration is included in the will.">
+	<label for="Unableinfo">unknown</label><br>
+	<input type="radio" id="UnableYes" name="UnableX" value="The Unable to Sign declaration is included in the will.">
+	<label for="UnableYes">yes</label><br>
+	<input type="radio" id="UnableNo" name="UnableX" value="The Unable to Sign declaration isn't in the will.">
+	<label for="UnableNo">no</label><br><br>
+<button type="button" onclick="addItem12()" name="UnableX" id="UnableX">submit</button>
+<br><br>
+</div>
+
+<div id="IlliterateClause" class="CIlliterateClause" style="display:none;">
+Is the following declaration, or one substantially similar, signed by the notary and two witnesses: "This testament has been read aloud in our presence and in the presence of the testator, such reading having been followed on copies of the testament by the witnesses [, and the notary if he is not the person who reads it aloud,] and in our presence the testator declared or signified that he heard the reading, and that the instrument is his testament, and that he signed his name at the end of the testament and on each other separate page; and in the presence of the testator and each other, we have subscribed our names this ____day of ____, ______." LA Civ Code art. 1579 (2021) <a href="https://www.legis.la.gov/legis/Law.aspx?d=108904">LA Civ Code art. 1579</a><br>
+	<input type="radio" id="Illiterateinfo" name="IlliterateX" value="It is unknown if the illiterate declaration is included in the will.">
+	<label for="Illiterateinfo">unknown</label><br>
+	<input type="radio" id="IlliterateNo" name="IlliterateX" value="The illiterate declaration is not included in the will.">
+	<label for="IlliterateNo">no</label><br>
+	<input type="radio" id="IlliterateYes" name="IlliterateX" value="The illiterate declaration is included in the will.">
+	<label for="IlliterateYes">yes</label><br><br>
+<button type="button" onclick="addItem13()" name="IlliterateX" id="IlliterateX">submit</button>
+<br><br>
+</div>
+
+<div id="BrailleClause" class="CBrailleClause" style="display:none;">
+Is the following declaration, or one substantially similar, in writing and not in braille, signed by the notary and two witnesses: "In our presence the testator has signed this testament at the end and on each other separate page and has declared or signified that it is his testament; and in the presence of the testator and each other we have hereunto subscribed our names this ____day of _____, _____." LA Civ Code art. 1580(A)(2)(4) (2021) <a href="https://www.legis.la.gov/legis/Law.aspx?d=108905">LA Civ Code art. 1580</a><br>
+	<input type="radio" id="Brailleinfo" name="BrailleX" value="It is unknown if this braille declaration is in the will.">
+	<label for="Brailleinfo" name="BrailleX">unknown</label><br>
+	<input type="radio" id="BrailleYes" name="BrailleX" value="The braille declaration is in the will.">
+	<label for="BrailleYes">yes</label><br>
+	<input type="radio" id="BrailleNo" name="BrailleX" value="The braille declaration isn't in the will.">
+	<label for="BrailleNo">no</label><br><br>
+<button type="button" onclick="addItem14()" name="BrailleX" id="BrailleX">submit</button>
+<br><br>
+</div>
+
+<div id="DeaforDBClause" class="CDeaforDBClause" style="display:none;">
+Is the following declaration, or one substantially similar, in writing and not in braille, signed by the notary and two witnesses: "The testator has signed this testament at the end and on each other separate page, and has declared or signified in our presence that this instrument is his testament, and in the presence of the testator and each other we have hereunto subscribed our names this __________ day of ____________, 2____ ." LA Civ Code art. 1580.1(B)(2) (2021)<br><br>
+Or, if the testator is deaf or deaf and blind, and also unable to sign their name because of a physical infirmity, is the following declaration, or one substantially similar, signed by the notary and two witnesses: "The testator has declared or signified by sign or visual English that he knows how to sign his name but is unable to sign his name because of a physical infirmity and he has affixed his mark at the end and on each other separate page of this testament, and declared or signified in our presence that this instrument is his testament and in the presence of the testator and each other we have hereunto subscribed our names this ___________ day of ___________________, 2_____." LA Civ Code art. 1580.1(C)(2) (2021)<a href="https://www.legis.la.gov/legis/Law.aspx?d=108906">LA Civ Code art. 1580.1</a><br>
+	<input type="radio" id="DeaforDBinfo" name="DeaforDBX" value="It is unknown if the above declaration is in the will.">
+	<label for="DeaforDBinfo" name="DeaforDBX">unknown</label><br>
+	<input type="radio" id="DeaforDBYes" name="DeaforDBX" value="The above declaration is in the will.">
+	<label for="DeaforDBYes">yes</label><br>
+	<input type="radio" id="DeaforDBNo" name="DeaforDBX" value="The above declaration isn't in the will.">
+	<label for="DeaforDBNo">no</label><br><br>
+<button type="button" onclick="addItem15()" name="DeaforDBX" id="DeaforDBX">submit</button>
+<br><br>
+</div>
+
+<div id="witnessCat" class="CwitnessCat" style="display:none;">
+Are any of the witnesses blind, insane, under the age of 16, or physically  unable to sign their own name? LA Civ Code art. 1581<a href="https://www.legis.la.gov/legis/Law.aspx?d=108907">https://www.legis.la.gov/legis/Law.aspx?d=108907</a><br>
+	<input type="radio" id="Wcapacityinfo" name="WcapacityX" value="It is unknown if any of the witnesses are blind, insane, under the age of 16, or physically unable to sign their own names.">
+	<label for="Wcapacityinfo">unknown</label><br>
+	<input type="radio" id="WcapacityYes" name="WcapacityX" value="At least one of the witnesses is blind, insane, under the age of 16, or physically unable to sign their own name.">
+	<label for="WcapacityYes">yes</label><br>
+	<input type="radio" id="WcapacityNo" name="WcapacityX" value="None of the witnesses are blind, insane, under the age of 16, or physically unable to sign their own names.">
+	<label for="WcapacityNo">no</label><br><br>
+<button type="button" onclick="addItem16()" name="WcapacityX" id="WcapacityX">submit</button>
+<br><br>
+</div>
+
+<div id="witnessLeg" class="CwitnessLeg" style="display:none;">
+Are any of the witnesses or the notary legatees? <a href="https://www.legis.la.gov/legis/Law.aspx?d=108908">LA Civ Code art. 1582</a><br>
+	<input type="radio" id="Wlegateeinfo" name="WlegateeX" value="It is unknown if any of the witnesses are legatees.">
+	<label for="Wlegateeinfo">unknown</label><br>
+	<input type="radio" id="WlegateeYes" name="WlegateeX" value="At least one of the witnesses is a legatee.">
+	<label for="WlegateeYes">yes</label><br>
+	<input type="radio" id="WlegateeNo" name="WlegateeX" value="None of the witnesses are legatees.">
+	<label for="WlegateeNo">no</label><br><br>
+<button type="button" onclick="addItem17()" name="WlegateeX id="WlegateeX">submit</button>
+<br><br>
+</div>
+
+<div id="spouseWit" class="CspouseWit" style="display:none;">
+Was the spouse of the testator at the time of the execution of the will a witness? <a href="https://www.legis.la.gov/legis/Law.aspx?d=206060">LA Civ Code Art. 1582.1</a><br>
+	<input type="radio" id="SpouseWinfo" name="SpouseWX" value="It is unknown if a spouse was a witness.">
+	<label for="SpouseWinfo">unknown</label><br>
+	<input type="radio" id="SpouseWYes" name="SpouseWX" value="The testator's spouse was a witness.">
+	<label for="SpouseWYes">yes</label><br>
+	<input type="radio" id="SpouseWNo" name="SpouseWX" value="The testator's spouse wasn't a witness.">
+	<label for="SpouseWNo">no</label><br><br>
+<button type="button" onclick="addItem18()" name="spouseWX" id="spouseWX">submit</button>
+<br><br>
+</div>
+
+<div id="forcedHeir" class="CforcedHeir" style="display:none;">
+Is or was there a forced heir?<br>
+	<input type="radio" id="forcedHeirinfo" name="forcedHeirX" value="It is unknown if there was a forced heir.">
+	<label for="forcedHeirinfo">unknown</label><br>
+	<input type="radio" id="forcedHeirYes" name="forcedHeirX" value="There was a forced heir.">
+	<label for="forcedHeirYes">yes</label><br>
+	<input type="radio" id="forcedHeirNo" name="forcedHeirX" value="There was no forced heir.">
+	<label for="forcedHeirNo">no</label><br><br>
+<button type="button" onclick="addItem19()" name="forcedHeirX" id="forcedHeirX">submit</button>
+<br><br>
+</div>
+  </p>
+  </div>
+  
+<div class="column" style="background-color:#bbb;">
+<div id="Progress_display_section_div">
+Progress - this will be collapsible, you'll click to expand
+</div>
+<div id="Response_display_section_div">
+</div>
+<h2>Summary</h2>
+<ul id="items"></ul>
+</p>
+</div>
+</div>
+
+
+<script language="javascript" type="text/javascript">
+
+    const items = document.querySelector('#items');
+    const willSelection = document.getElementsByName('will_selection');
+    const willSolo = document.getElementsByName('will_soloX');
+    const willLocation = document.getElementsByName('will_location');
+    const willOutOfState = document.getElementsByName('out_of_stateX');
+    const willDate = document.getElementsByName('willdateX');
+    const willType = document.getElementsByName('will_typeX');
+    const willHandwritten = document.getElementsByName('handwrittenX');
+    const willDate2 = document.getElementsByName('will_date_specX');
+    const willSignature = document.getElementsByName('willsigX');
+    const willIntent = document.getElementsByName('willintentX');
+    const willCapacity = document.getElementsByName('capacityX');
+    const UnableToSign = document.getElementsByName('UnableX');
+    const UnableIlliterate = document.getElementsByName('IlliterateX');
+    const UnableBraille = document.getElementsByName('BrailleX');
+    const UnableDB = document.getElementsByName('DeaforDBX');
+    const WCapacity = document.getElementsByName('WcapacityX');
+    const WLegatee = document.getElementsByName('WlegateeX');
+    const WSpouse = document.getElementsByName('SpouseWX');
+    const ForcedHeir = document.getElementsByName('forcedHeirX');
+    const TClause = document.getElementsByName('TestatorClauseX');
+    let varWillType;
+    let varWillDate;
+
+alert("this is working");
+
+    function handleClick(e) {
+      if (e.target.matches('.delete')) {
+        const { id } = e.target.dataset;
+        const selector = `li[data-id="${id}"]`;
+        items.querySelector(selector).remove();
+      }
+    }
+
+    function addItem() {
+      let selectedValue;
+
+      for (const radio of willSelection) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#yes_will').is(':checked')) {
+      $("div.Cwill_origin").show();
+      let LetaddItem1 = 1;
+      }
+
+      else if ($('#no_will').is(':checked')) {
+      alert("There is no will, end point.");
+      $("div.Cwill_origin").hide();
+      let LetaddItem = 2;
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for willLocation
+
+    function addItem2() {
+      let selectedValue;
+
+      for (const radio of willLocation) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#locationnfo').is(':checked')) {
+      $("div.Cwill_solo").show();
+      $("div.Cout_of_state").hide();
+      }
+
+      else if ($('#in_LA').is(':checked')) {
+      $("div.Cwill_solo").show();
+      $("div.Cout_of_state").hide();
+      }
+
+      else if ($('#another_state').is(':checked')) {
+      $("div.Cwill_solo").hide();
+      $("div.Cout_of_state").show();
+      }
+
+      else if ($('#another_country').is(':checked')){
+      alert("Stopping point. The will was executed in another country. This page is only for United States wills and only detailed for Louisiana wills.");
+      $("div.Cwill_solo").hide();
+      $("div.Cout_of_state").hide();
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+//script for willSolo
+
+    function addItem3() {
+      let selectedValue;
+
+      for (const radio of willSolo) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#willsoloinfo').is(':checked')) {
+      $("div.Cwill_type").show();
+      }
+
+      else if ($('#yes_will_solo').is(':checked')) {
+      $("div.Cwill_type").hide();
+      alert('Stopping point, invalid will. The will was executed by somebody besides the Testator or it is a will for more than one person.'); 
+      }
+
+      else if ($('#no_will_solo').is(':checked')) {
+      $("div.Cwill_type").show();
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for will out of state
+
+    function addItem4() {
+      let selectedValue;
+
+      for (const radio of willOutOfState) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#OutStateinfo').is(':checked')) {
+      alert('Stopping point, research state criteria for the state the will was executed in. Include useful link or resources here.');
+      }
+
+      else if ($('#yes_out_req').is(':checked')) {
+      alert('Stopping point, this is a valid will.'); 
+      }
+
+      else if ($('#no_out_req').is(':checked')) {
+      alert('Stopping point, this is an invalid will.');
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+//script for exact will date 
+
+    function addItem5() {
+      let selectedValue;
+
+      for (const radio of willDate2) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+	  
+      if ($('#dateinfo').is(':checked')) {
+      alert("Stopping point, date must be known.");
+      $("div.Chandwritten").hide();
+      }
+
+      else if ($("#before1999").is(':checked')) {
+           switch (varWillType) {
+                case 1:
+                     $("div.Chandwritten").show();
+                     break;
+                case 2:
+                     $("div.Chandwritten").show();
+                     break;
+                case 3:
+                     $("div.Chandwritten").show();
+                     break;
+                case 4:
+                     $("div.Chandwritten").show();
+                     break;
+                case 5:
+                     $("div.Chandwritten").show();
+                     break;
+                case 6:
+                     $("div.Chandwritten").show();
+                     break;
+                default:
+                     alert("Stopping point, the date the will was done must be known.");
+      }}
+
+
+
+      else if ($('#after1999').is(':checked')) {
+           switch (varWillType) {
+                case 1:
+                     $("div.Chandwritten").show();
+                     break;
+                case 2:
+                     $("div.Chandwritten").show();
+                     break;
+                case 3:
+                     alert("Stopping point, invalid will. Put statute and link in");
+                     $("div.Chandwritten").hide();
+                     break;
+                case 4:
+                     alert("Stopping point, invalid will. Put statute and link in");
+                     $("div.Chandwritten").hide();
+                     break;
+                case 5:
+                     alert("Stopping point, invalid will. Put statute and link in");
+                     $("div.Chandwritten").hide();
+                     break;
+                case 6:
+                     alert("Doublecheck on statutory wills, their status and the dates for them, and then get the statute and links in. For now this is a stopping point"); 
+                     $("div.Chandwritten").hide();
+                     break;
+                default:
+                     alert("Stopping point, the date the will was done must be known.");
+      }}
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+//script for will type
+
+    function addItem6() {
+      let selectedValue;
+
+      for (const radio of willType) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#typeinfo').is(':checked')) {
+      alert("Stopping point, will type must be known.");
+      $("div.Cwill_date").hide();
+      }
+
+      else if ($("#olographic").is(':checked')) {
+      varWillType = 1;
+      $("div.Cwill_date").show();
+      }
+
+      else if ($('#notarial').is(':checked')) {
+      varWillType = 2;
+      $("div.Cwill_date").show();
+      }
+	  
+      else if ($("#mystic").is(':checked')) {
+      varWillType = 3;
+      $("div.Cwill_date").show();
+	  }
+	  
+      else if ($("#nun_public").is(':checked')) {
+      varWillType = 4;
+      $("div.Cwill_date").show();
+	  }
+	  
+      else if ($("#nun_private").is(':checked')) {
+      varWillType = 5;
+      $("div.Cwill_date").show();
+	  }
+
+      else if ($("#statutory").is(':checked')) {
+      varWillType = 6;
+      $("div.Cwill_date").show();
+	  }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+//script for will handwritten
+
+    function addItem7() {
+      let selectedValue;
+
+      for (const radio of willHandwritten) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+		  
+		}
+      }
+
+		  
+      if ($('#handwritteninfo').is(':checked')) {
+           alert("Stopping point, you have to know if the will was handwritten, typed, etc");
+           $("div.Cwill_sig").hide();
+      }
+
+      else if ($("#yes_handwritten").is(':checked')) {
+           switch (varWillType) {
+                case 1:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 2:
+                     alert("Stopping point, a notarial will cannot be handwritten");
+                     $("div.Cwill_sig").hide();
+                     break;
+                case 3:
+                     alert("Not sure on this, will need to research further to confirm");
+                     $("div.Cwill_sig").show();
+                     break;
+                case 4:
+                     alert("Not sure on this, will need to research further to confirm");
+                     $("div.Cwill_sig").show();
+                     break;
+                case 5:
+                     alert("Not sure on this, saw mixed case handling, but this is Louisiana and the statute itself is silent. You might have to go back to basic contract law as a more general framing context. For now it seems to lean that a typed private nuncupative would likely be accepted all things considered.");
+                     break;
+                     $("div.Cwill_sig").show();
+                case "6":
+                     alert("A statutory will can be handwritten");
+                     $("div.Cwill_sig").show();
+                     break;
+                default:
+                     alert("Stopping point, how the will is written must be known.");
+      }}
+
+      else if ($('#not_handwritten').is(':checked')) {
+           switch (varWillType) {
+                case 1:
+                     $("div.Cwill_sig").hide();
+                     alert("Stopping point, invalid will. An olographic will by definition must be handwritten. Add supporting statutes to these.");
+                     break;
+                case 2:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 3:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 4:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 5:
+                     $("div.Cwill_sig").show();
+                     break;
+                case "6":
+                     $("div.Cwill_sig").show();
+                     break;
+                default:
+                     alert("Stopping point, how the will is written must be known.");
+      }}	  
+
+      else if ($('#partial_handwritten').is(':checked')) {
+           switch (varWillType) {
+                case 1:
+                     $("div.Cwill_sig").hide();
+                     alert("Stopping point, invalid will. An olographic will by definition must be fully handwritten. Add supporting statutes to these, and double check, doublecheck everything and run it by the attorneys this summer.");
+                     break;
+                case 2:
+                     $("div.Cwill_sig").hide();
+                     alert("Stopping point, invalid will. A notarial will cannot be typed in part and handwritten in part. Double check of course all of this again.");
+                     break;
+                case 3:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 4:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 5:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 6:
+                     $("div.Cwill_sig").show();
+                     alert("doublecheck statutes on all these, and the contract interpretation");
+                     break;
+                default:
+                     alert("Stopping point, how the will is written must be known.");
+      }}
+
+      else if ($('#other_handwritten').is(':checked')) {
+           switch (varWillType) {
+                case 1:
+                     $("div.Cwill_sig").hide();
+                     alert("Stopping point, invalid will. An olographic will by definition must be fully handwritten. Add supporting statute and link.");
+                     break;
+                case 2:
+                     $("div.Cwill_sig").hide();
+                     alert("Stopping point, invalid will. A notarial will must be typed in whole. Add statute source and exact statute clause.");
+                     break;
+                case 3:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 4:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 5:
+                     $("div.Cwill_sig").show();
+                     break;
+                case 6:
+                     $("div.Cwill_sig").hide();
+                     alert("A statutory will must be written, either typed or handwritten. Add statute and link.");
+                     break;
+                default:
+                     alert("Stopping point, how the will is written must be known.");
+      }}
+		  
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for will date (if the will has a date)
+
+    function addItem8() {
+      let selectedValue;
+
+      for (const radio of willDate) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#willdateinfo').is(':checked')) {
+      alert("Stopping point, it is unknown if the will has a date. I'm not sure if I want to leave this as a stopping point or not yet.");
+      $("div.Cwill_date_spec").hide();
+      }
+
+      else if ($('#yes_willdate').is(':checked')) {
+      $("div.Cwill_date_spec").show(); 
+      }
+
+      else if ($('#no_willdate').is(':checked')) {
+      alert('Stopping point, this is an invalid will. You need to add in all the finer detail for this');
+      $("div.Cwill_date_spec").hide();
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for will signature
+
+    function addItem9() {
+      let selectedValue;
+
+      for (const radio of willSignature) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+	  
+      if ($('#willsiginfo').is(':checked')) {
+      $("div.Cwill_intent").show();
+      }
+
+      else if ($("#yes_willsig").is(':checked')) {
+      $("div.Cwill_intent").show();
+      }
+
+      else if ($('#no_willsig').is(':checked')) {
+      $("div.Cwill_intent").hide();
+	  alert("Stopping point, invalid will.");
+      }		  
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for will intent
+
+    function addItem10() {
+      let selectedValue;
+
+      for (const radio of willIntent) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#willintentinfo').is(':checked')) {
+      $("div.Ccapacity").show();
+      }
+
+      else if ($("#yes_willintent").is(':checked')) {
+      $("div.Ccapacity").show();
+      }
+
+      else if ($('#no_willintent').is(':checked')) {
+      $("div.Ccapacity").hide();
+	  alert("Stopping point, invalid will.");
+      }	
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for will capacity
+
+    function addItem11() {
+      let selectedValue;
+
+      for (const radio of willCapacity) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#capacityinfo').is(':checked')) {
+          alert("Stopping point, capacity of Testator/trix must be known");
+          	     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+      }
+
+      else if ($("#fullCap").is(':checked')) {
+
+           switch (varWillType) {
+                case 1:
+	             $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").show();
+                     break;
+                case 2:
+                     $("div.CTestatorClause").show();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 3:
+                     $("div.CTestatorClause").show();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 4:
+                     $("div.CTestatorClause").show();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 5:
+                     $("div.CTestatorClause").show();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 6:
+                     $("div.CTestatorClause").show();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                default:
+                     alert("Stopping point, capacity of Testator/trix must be known");
+      }}
+
+      else if ($('#Capilliterate').is(':checked')) {
+
+           switch (varWillType) {
+                case 1:
+	             $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     alert("Stopping point, an olographic will cannot be written by an illiterate testator. Here, you need to check further on this outcome");
+                     break;
+                case 2:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").show();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 3:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").show();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 4:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").show();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 5:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").show();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 6:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").show();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                default:
+                     alert("Stopping point, capacity of Testator/trix must be known");
+      }}
+	  
+	  else if ($('#Punable').is(':checked')) {
+
+           switch (varWillType) {
+                case 1:
+	             $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     alert("Stopping point, an olographic will cannot be handwritten by a testator who is unable to write.");
+                     break;
+                case 2:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").show();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 3:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").show();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 4:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").show();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 5:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").show();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 6:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").show();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                default:
+                     alert("Stopping point, capacity of Testator/trix must be known");
+      }}
+	  
+	  else if ($('#Braille').is(':checked')) {
+
+           switch (varWillType) {
+                case 1:
+	             $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").show();
+                     break;
+                case 2:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").show();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 3:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").show();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 4:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").show();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 5:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").show();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 6:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").show();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                default:
+                     alert("Stopping point, capacity of Testator/trix must be known");
+      }} 
+	  
+	  else if ($('#DeaforDB').is(':checked')) {
+
+           switch (varWillType) {
+                case 1:
+	             $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").hide();
+                     $("div.CwitnessLeg").show();
+                     break;
+                case 2:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").show();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 3:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").show();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 4:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").show();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 5:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").show();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                case 6:
+                     $("div.CTestatorClause").hide();
+                     $("div.CBrailleClause").hide();
+	             $("div.CIlliterateClause").hide();
+	             $("div.CUnableToSignClause").hide();
+	             $("div.CDeaforDBClause").show();
+                     $("div.CwitnessLeg").hide();
+                     break;
+                default:
+                     alert("Stopping point, capacity of Testator/trix must be known");
+      }}  
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for Testator Clause
+
+    function addItem20() {
+      let selectedValue;
+
+      for (const radio of TClause) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#testatorclauseinfo').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      else if ($('#yes_testatorclause').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      else if ($('#no_testatorclause').is(':checked')) {
+      $("div.CwitnessCat").hide();
+	  alert("stopping point, invalid will");
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+
+//script for unabletosign
+
+    function addItem12() {
+      let selectedValue;
+
+      for (const radio of UnableToSign) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#Unableinfo').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      else if ($('#UnableNo').is(':checked')) {
+      $("div.CwitnessCat").hide();
+      alert("stopping point, invalid will");
+      }
+
+      else if ($('#UnableYes').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for illiterate clause
+
+    function addItem13() {
+      let selectedValue;
+
+      for (const radio of UnableIlliterate) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#Illiterateinfo').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      else if ($('#IlliterateNo').is(':checked')) {
+      $("div.CwitnessCat").hide();
+      alert("stopping point, invalid will");
+      }
+
+      else if ($('#IlliterateYes').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for braille clause
+
+    function addItem14() {
+      let selectedValue;
+
+      for (const radio of UnableBraille) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#Brailleinfo').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      else if ($('#BrailleNo').is(':checked')) {
+      $("div.CwitnessCat").hide();
+      alert("stopping point, invalid will");
+      }
+
+      else if ($('#BrailleYes').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for DB clause
+
+    function addItem15() {
+      let selectedValue;
+
+      for (const radio of UnableDB) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#DeaforDBinfo').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      else if ($('#DeaforDBNo').is(':checked')) {
+      $("div.CwitnessCat").hide();
+      alert("stopping point, invalid will");
+      }
+
+      else if ($('#DeaforDBYes').is(':checked')) {
+      $("div.CwitnessCat").show();
+      }
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script for witness capacity
+
+    function addItem16() {
+      let selectedValue;
+      for (const radio of WCapacity) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#Wcapacityinfo').is(':checked')) {
+      $("div.CwitnessLeg").show();
+      }
+
+      else if ($("#WcapacityYes").is(':checked')) {
+      $("div.CwitnessLeg").hide();
+      alert("Stopping point, may be invalid will.");
+      }
+
+      else if ($('#WcapacityNo').is(':checked')) {
+      $("div.CwitnessLeg").show();
+      }	
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script to check if a witness is a legatee
+
+    function addItem17() {
+      let selectedValue;
+      for (const radio of WLegatee) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#Wlegateeinfo').is(':checked')) {
+      $("div.CspouseWit").show();
+      }
+
+      else if ($("#WlegateeYes").is(':checked')) {
+      $("div.CspouseWit").show();
+      alert("May affect legitimacy of that legatee's inheritance, get in specs here, but not a stopping point.");
+      }
+
+      else if ($('#WlegateeNo').is(':checked')) {
+      $("div.CspouseWit").show();
+      }	
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script to check if a witness is a spouse
+
+    function addItem18() {
+      let selectedValue;
+      for (const radio of WSpouse) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#SpouseWinfo').is(':checked')) {
+      $("div.CforcedHeir").show();
+      }
+
+      else if ($('#SpouseWYes').is(':checked')) {
+      $("div.CforcedHeir").show();
+      alert("May affect legitimacy of spouse's inheritance");
+      }
+
+      else if ($('#SpouseWNo').is(':checked')) {
+      $("div.CforcedHeir").show();
+      }	
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+
+//script to check if there were forced heirs
+
+    function addItem19() {
+      let selectedValue;
+      for (const radio of ForcedHeir) {
+        if (radio.checked) {
+          selectedValue = radio.value;
+          break;
+        }
+      }
+
+      if ($('#forcedHeirinfo').is(':checked')) {
+      alert("filler, is working.");
+      }
+
+      else if ($("#forcedHeirYes").is(':checked')) {
+      alert("This will affect analysis of validity of will clauses");
+      }
+
+      else if ($('#forcedHeirNo').is(':checked')) {
+      alert("End point. This appears to be a valid will.");
+      }	
+
+      if (selectedValue) {
+        const html = `
+          <li data-id="${selectedValue}">
+            ${selectedValue}
+            <button
+              type="button"
+              data-id="${selectedValue}"
+              class="delete"
+            >Delete
+            </button>
+          </li>
+        `;
+
+        items.insertAdjacentHTML('beforeend', html);
+      
+        // Add event listener to the newly added delete button
+        const deleteButtons = document.querySelectorAll('.delete');
+        deleteButtons.forEach(button => button.addEventListener('click', handleClick));
+
+      } else {
+        alert('Please select an option.');
+      }
+    }
+  </script>
+
+</body>
+</html>
