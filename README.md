@@ -6,4 +6,7 @@ Incomlete will analysis program
 
 * Also, as far as how you're doing the buttons. Another way to do it might be frames. I've never worked with frames before, but if each button could just be on the equivalent of a card that could be put at the bottom as next or removed that could be a better approach than showing and hiding html buttons, cuz I have a strong suspicion I'm gonna run into the having to duplicate buttons to get them in right order sequence again without big gaps of space. Or, you could put a size value to each button, and then just expand or collapse them, that likely would be easier.
 
-* First finish putting in the logic flow. Assign values as needed with the 'let' variable and then just do if else if and nesting as needed.
+* First finish putting in the logic flow. Assign values as needed with the 'let' variable and then just do if else if and nesting as needed. //did hat
+
+6/16/24
+* You looked up the archaic will statutes and added the info in to the will type section. Next is getting the show/hide button nested in the will type button to work right and look pretty with css.Then you need to adjust the logic flow where you can with the archaic will stuff requirements you looked up. After that it is a fully functional bare analysis page, but there's all the other improvements too. 
