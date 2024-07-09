@@ -10,5 +10,6 @@ Incomlete will analysis program
 
 6/16/24
 * You looked up the archaic will statutes and added the info in to the will type section. Next is getting the show/hide button nested in the will type button to work right and look pretty with css.Then you need to adjust the logic flow where you can with the archaic will stuff requirements you looked up. After that it is a fully functional bare analysis page, but there's all the other improvements too.
+  
 7/8/2024
 * You stopped the archaic formats from moving forward in the capacity question. It is a functional rough draft. You still allow duplicate entries and have the 'this is working' pop up still.
