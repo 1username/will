@@ -13,3 +13,6 @@ Incomlete will analysis program
   
 7/8/2024
 * You stopped the archaic formats from moving forward in the capacity question. It is a functional rough draft. You still allow duplicate entries and have the 'this is working' pop up still.
+
+8/16/26
+* You became aware of the 2025 Act No. 30 that caused substantial changes to the notarial and olographic requirements. Put in a quote to the initial pop up to alert anybody viewing that the program doesn't reflect that.
